@@ -34,7 +34,7 @@ public class FixedWindowStrategy implements IRateLimitStrategy {
     }
 
     private static class Window{
-        long windowId;
+        volatile long windowId;
         int count;
 
         Window(long windowId , int count){
