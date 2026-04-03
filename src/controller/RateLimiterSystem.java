@@ -15,7 +15,7 @@ public class RateLimiterSystem {
         IRemoteService proxy = new RemoteServiceProxy(s1,fixedWindow , "User123");
 
         System.out.println("Hit 1:");
-        proxy.processTask("Date A");
+        proxy.processTask("Data A");
 
         System.out.println(" Hit 2 (Immediate):");
         proxy.processTask("Data B");
